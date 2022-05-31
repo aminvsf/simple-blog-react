@@ -1,0 +1,26 @@
+.post {
+    margin: 0 1.3rem;
+    padding: 0 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    border: none;
+    border-radius: 7px;
+}
+
+.post h2 {
+    font: inherit;
+    font-size: 25px;
+}
+
+.btn-read {
+    font: inherit;
+    border: none;
+    background: #00b8ff;
+    color: #ffffff;
+    padding: 10px;
+    border-radius: 7px;
+    margin-bottom: 14px;
+}
+
+.btn-read:hover {
+    cursor: pointer;
+}
