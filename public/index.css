@@ -1,3 +1,23 @@
+@font-face {
+    font-family: 'OpenSans-Bold';
+    src: url("./fonts/OpenSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: 'OpenSans-Light';
+    src: url("./fonts/OpenSans-Light.ttf");
+}
+
+@font-face {
+    font-family: 'OpenSans-Medium';
+    src: url("./fonts/OpenSans-Medium.ttf");
+}
+
+@font-face {
+    font-family: 'OpenSans-SemiBold';
+    src: url("./fonts/OpenSans-SemiBold.ttf");
+}
+
 body {
-    font-family: "Berlin Sans FB Demi", sans-serif;
+    font-family: 'OpenSans-Medium', sans-serif;
 }
