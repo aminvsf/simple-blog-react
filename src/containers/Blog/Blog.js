@@ -5,6 +5,8 @@ import Wrapper from "../../hoc/Wrapper/Wrapper";
 import Modal from "../../components/UI/Modal/Modal";
 import Posts from "../../components/Posts/Posts";
 import PostCreate from "../../components/PostCreate/PostCreate";
+import AuthorCreate from "../../components/AuthorCreate/AuthorCreate";
+import {ToastContainer} from "react-toastify";
 
 
 class Blog extends React.Component {
@@ -29,6 +31,7 @@ class Blog extends React.Component {
 
     render() {
         return <Wrapper>
+            <ToastContainer/>
             <Modal
                 show={this.state.showPostDetail}
                 postId={this.state.currentPostId}
@@ -40,6 +43,7 @@ class Blog extends React.Component {
                 posts={this.state.posts}
             />
             <PostCreate/>
+            <AuthorCreate/>
         </Wrapper>;
     }
 }

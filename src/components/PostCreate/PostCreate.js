@@ -48,7 +48,6 @@ const PostCreate = (props) => {
 
     return <div className={'new-post-section'}>
         <HeadContainer title={'New Post'}/>
-        <ToastContainer/>
         <div className={'inputs'}>
             <div className={'input'}>
                 <div>
@@ -57,6 +56,7 @@ const PostCreate = (props) => {
                 <input
                     type="text"
                     value={title}
+                    placeholder={'enter a title'}
                     onChange={(event) => setTitle(event.target.value)}
                 />
             </div>
@@ -66,7 +66,7 @@ const PostCreate = (props) => {
                 </div>
                 <select name="author"
                         id="author"
-                        defaultValue={authorId}
+                        value={authorId}
                         onChange={(event) => setAuthorId(event.target.value)}>
                     <option disabled value={'not-selected'}>-- select an author --</option>
                     {authors.map((author) => {
@@ -83,6 +83,7 @@ const PostCreate = (props) => {
                     id="content"
                     cols="30"
                     rows="5"
+                    placeholder={'enter your desired content'}
                     value={content}
                     onChange={(event) => setContent(event.target.value)}
                 />
